@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-signal(SIGINT, sigintHandler);
+signal(SIGINT, sigHandler);
 while (1)
 {
 char *st = STR_PROMPT;

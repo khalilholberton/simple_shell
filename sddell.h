@@ -11,7 +11,7 @@
 extern char **environ;
 char **divide_buffer(char *buffer);
 void exe(char **arrp);
-void sigintHandler();
+void sigHandler(int num);
 void env_sh(char **arrp);
 int _strcmp(char *str1, char *str2);
 void print_sh(char *s);
