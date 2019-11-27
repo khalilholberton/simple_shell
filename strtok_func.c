@@ -1,5 +1,14 @@
 #include "sddell.h"
 #define DEL " "
+
+/**
+ *divide_buffer - divide buffer
+ *@buffer: pointer to buffer
+ *Return: Always success
+ */
+
+
+
 char **divide_buffer(char *buffer)
 {
 char **arrp;

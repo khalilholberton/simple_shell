@@ -1,0 +1,50 @@
+./"this is the manpage of the hsh
+.TH hsh "2019-11-27" "Holberton school shell" "hsh man page"
+
+.SH NAME
+hsh
+
+
+.SH DESCRIPTION
+hsh a shell is a user interface that allow users to control all the operating system's services. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel .
+Hsh is an sh-compatible command language interpreter that executes commands read from the standard input or from a file. 
+
+.SH Overview
+The hsh reads lines from either a file or the terminal , interprets them . It executes built-ins , if the first argument of the command line is not built-in , it should be an exexecutable to be executed . The executables are found in the §PATH Envirement . The hsh will check for them in the §PATH envirement .
+
+.SH Invocation
+
+If no args are present , the user will be promped again to enter command . From this situation comes the notation of interactive shell , interactive shell asks the user for command each type the user enter just /n to the shell .
+
+.SH Commands
+
+The hsh interprets the words it reads according to a langauge , built-ins or executable .
+
+.SH Simple Commands
+
+If a simple command has been recognized, the hsh will execute it .
+
+.SH Redirections
+No redirections , the hsh don't handle the pipes.
+
+.SH Search and Execution
+
+There are two types can be executed in the hsh : built-ins and executables . The command is searched for by it's name in that order . They each are executed in a different way .
+
+hsh builtins are executed internally to the hsh without spawning a new process .
+Otherwise , if the command doesn't match a builtin , the command is searched for as a normal program in the file systemn . When a simple program is executed the hsh runs the program , passing the arguments and the environment to the program . .
+
+.SH Path Search
+When locating a command , the hsh first looks to see if it has a builtin function by that naame . If a builtin command is not found , one of two things happen :
+1. Command names containing a slash are simply executed without performing any searches .
+2. The hsh searches each entry in Path in turn for the command . The value of the PATH variable should be a series of entries separated by colons . Each entry consists of a directory name . The current directory may be indicated imlicitly by an empty directory name , or explicitly by a single period .
+
+
+.SH Complex Commans
+
+Complex commands are combinations of simple commands with control operations or reserved words , together creating a larger coomplex command . Just Like pipeline , Function defi,tion,... Not covered by the hsh.
+
+
+.SH AUTHOR
+Khalil Sdiri
+Ahmed kousssay Dellai
