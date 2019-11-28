@@ -1,8 +1,8 @@
 #include "sddell.h"
 #define STR_CTRL_C "\n#cisfun$ "
 /**
- * sigintHandler - function that handle the signals
- *
+ * sigHandler - function that handle the signals
+ * @num : is int type
  *
  * Return: nothing
  */
