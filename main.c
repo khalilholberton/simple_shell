@@ -26,7 +26,7 @@ exit(1);
 }
 
 buf = getline(&buffer, &bufsize, stdin);
-if (buf  == EOF)
+if (buf == EOF)
 {
 write(STDOUT_FILENO, "\n", 1);
 exit(0);
