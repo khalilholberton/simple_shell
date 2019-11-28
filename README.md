@@ -1,4 +1,4 @@
-Simple shell project
+#Simple shell project
 
 List of allowed functions and system calls
 
