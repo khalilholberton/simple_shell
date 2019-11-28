@@ -7,8 +7,7 @@ hsh
 
 .SH DESCRIPTION
 hsh a shell is a user interface that allow users to control all the operating system's services. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel .
-Hsh is an sh-compatible command language interpreter that executes commands read from the standard input or from a file. 
-
+Hsh is an sh-compatible command language interpreter that executes commands read from the standard input or from a file.
 .SH Overview
 The hsh reads lines from either a file or the terminal , interprets them . It executes built-ins , if the first argument of the command line is not built-in , it should be an exexecutable to be executed . The executables are found in the §PATH Envirement . The hsh will check for them in the §PATH envirement .
 
