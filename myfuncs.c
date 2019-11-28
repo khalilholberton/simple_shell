@@ -2,16 +2,18 @@
 #define STR_CTRL_C "\n#cisfun$ "
 /**
  * sigintHandler - function that handle the signals
- *
+ *@num: integer var
  *
  * Return: nothing
  */
-void sigintHandler()
+void sigintHandler(int num)
 {
-signal(SIGINT, sigintHandler);
 char *ctrlc = STR_CTRL_C;
+if (num == SIGINT)
+{
 print_sh(ctrlc);
 fflush(stdout);
+}
 }
 /**
  * print_sh - function that print a string
