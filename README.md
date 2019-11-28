@@ -58,32 +58,20 @@ You don’t have to:
     handle commands with arguments
 
 II/ Second step
-
-
 Handle command lines with arguments.
 
 III/ Third Step
-
-
  Handle the PATH
 
 Some information that should help : A path, the general form of the name of a file or directory, specifies a unique location in a file system. A path points to a file system location by following the directory tree hierarchy expressed in a string of characters in which path components, separated by a delimiting character, represent each directory.
 
 IV/ Fourth step
-
-
-    Implement the exit built-in, that exits the shell
-    Usage: exit
-    You don’t have to handle any argument to the built-in exit
+Implement the exit built-in, that exits the shell
+Usage: exit
+You don’t have to handle any argument to the built-in exit
 
 V/ Fifth step
-
  Implement the env built-in, that prints the current environment
 
 Some information that should help : Environment variables are not specific to the C language, any program that runs on your system has a set of predefined environment variables. ... When your C program runs, the kernel passes control to the main function which has the signature: int main(int argc, char **argv)
-
-
-
-
 Written by khalil Sdiri and Ahmed koussay Dellai
-
