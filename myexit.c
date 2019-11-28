@@ -2,10 +2,9 @@
 /**
  * exit_sh - function that exit the shell
  * @buffer : is char type
- * @buf : is int type
  * return : nothing
  */
-void exit_sh(char *buffer, int buf)
+void exit_sh(char *buffer)
 {
 if (_strcmp(buffer, "exit\n") == 0)
 {
