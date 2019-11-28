@@ -6,8 +6,14 @@
  *
  * Return: nothing
  */
+<<<<<<< HEAD
 void sigintHandler(int num)
 {
+=======
+void sigHandler(int num)
+{
+
+>>>>>>> 3444d35317fc805a09b8a8af6f4c1a15f3b70748
 char *ctrlc = STR_CTRL_C;
 if (num == SIGINT)
 {
