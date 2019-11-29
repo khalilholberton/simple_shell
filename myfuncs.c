@@ -7,6 +7,9 @@
 =======
  * sigintHandler - function that handle the signals
  *@num: integer var
+<<<<<<< HEAD
+>>>>>>> 73f867c808656b55de52c31cc9334661f28b584f
+=======
 >>>>>>> 73f867c808656b55de52c31cc9334661f28b584f
  *
  * Return: nothing
