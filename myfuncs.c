@@ -18,7 +18,7 @@ fflush(stdout);
 /**
  * print_sh - function that print a string
  * @s : is char type
- * return : nothung
+ * return : nothing
  */
 void print_sh(char *s)
 {
