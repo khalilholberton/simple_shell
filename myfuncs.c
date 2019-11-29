@@ -1,14 +1,18 @@
  #include "sddell.h"
 #define STR_CTRL_C "\n#cisfun$ "
 /**
+<<<<<<< HEAD
  * sigHandler - function that handle the signals
  * @num : is int type
+=======
+ * sigintHandler - function that handle the signals
+ *@num: integer var
+>>>>>>> 73f867c808656b55de52c31cc9334661f28b584f
  *
  * Return: nothing
  */
-void sigHandler(int num)
+void sigintHandler(int num)
 {
-
 char *ctrlc = STR_CTRL_C;
 if (num == SIGINT)
 {

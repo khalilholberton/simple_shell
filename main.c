@@ -9,14 +9,14 @@
  */
 int main(void)
 {
-signal(SIGINT, sigHandler);
+signal(SIGINT, sigintHandler);
 while (1)
 {
 char *st = STR_PROMPT;
 print_sh(st);
 char *buffer = NULL;
 size_t bufsize = BUFSIZE_sh;
-size_t buf;
+int buf;
 
 buffer = (char *)malloc(bufsize * sizeof(char));
 if (buffer == NULL)
@@ -26,12 +26,12 @@ exit(1);
 }
 
 buf = getline(&buffer, &bufsize, stdin);
-if (buf  == EOF)
+if (buf == EOF)
 {
 write(STDOUT_FILENO, "\n", 1);
 exit(0);
 }
-exit_sh(buffer, buf);
+exit_sh(buffer);
 
 char **arrp = divide_buffer(buffer);
 exe(arrp);
