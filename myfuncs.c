@@ -1,4 +1,4 @@
-#include "sddell.h"
+ #include "sddell.h"
 #define STR_CTRL_C "\n#cisfun$ "
 /**
  * sigHandler - function that handle the signals
