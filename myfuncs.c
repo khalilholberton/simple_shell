@@ -1,16 +1,8 @@
  #include "sddell.h"
 #define STR_CTRL_C "\n#cisfun$ "
 /**
-<<<<<<< HEAD
- * sigHandler - function that handle the signals
- * @num : is int type
-=======
  * sigintHandler - function that handle the signals
  *@num: integer var
-<<<<<<< HEAD
->>>>>>> 73f867c808656b55de52c31cc9334661f28b584f
-=======
->>>>>>> 73f867c808656b55de52c31cc9334661f28b584f
  *
  * Return: nothing
  */
@@ -42,7 +34,7 @@ return;
  * env_sh - prints environment
  * @arrp: is char type
  *
- * Return: nothing
+ * Return: none
  */
 void env_sh(char **arrp)
 {
