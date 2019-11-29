@@ -4,7 +4,7 @@
  * sigintHandler - function that handle the signals
  *@num: integer var
  *
- * Return: nothing
+ * Return: none
  */
 void sigintHandler(int num)
 {
